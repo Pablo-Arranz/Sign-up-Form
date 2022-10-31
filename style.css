@@ -1,3 +1,22 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 40vw;
+    background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+img {
+    height: 100px;
+}
+
+.white {
+    color: white;
+}
+
 span {
     font-style: italic;
 }
