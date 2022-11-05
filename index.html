@@ -13,48 +13,60 @@
 
         <div class="logo-section">
             <img src="images/odin-lined.png" alt="Odin logo">
-            <div class="white">ODIN</div>
+            <div class="white odin">ODIN</div>
         </div>
         <footer class="white">Photo by Halie West on Unsplash</footer>
     </div>
     
     <div class="container">
-    <h3>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</h3>
-    
-    <h3>You <span>know</span> you want to</h3>
-    
-    <form action="#">
-        <p>Let's do this!</p>
-        <div>
-            <label for="fname">FIRST NAME</label>
-            <input type="text" name="fname" id="fname">
-        </div>
-        <div>
-            <label for="lname">LAST NAME</label>
-            <input type="text" name="lname" id="lname">
-        </div>
-        <div>
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone">
-        </div>
-        <div>
-            <label for="pwd">PASSWORD</label>
-            <input type="password" name="password" id="pwd">
-        </div>
-        <div>
-            <label for="confirmpwd">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmpwd" id="confirmpwd">
-        </div>
-
-        <div><button type="submit">Create Account</button></div>
         
-    </form>
-
-    <div>Already have an account? <a href="">Log in</a></div>
+        <div class="grey-wrapper top">
+            <h3>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <span>now</span> to get started.</h3>
+        
+            <h3>You <span>know</span> you want to</h3>
+        </div>
+        
+        <form class="myform" action="#" method="get">
+            <div class="form-wrapper">
+                <h3>Let's do this!</h3>
+            </div>
+            <div class="form-wrapper">
+                <div>
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="password" id="pwd" required>
+                </div>
+                <div>
+                    <label for="confirmpwd">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmpwd" id="confirmpwd" required>
+                </div>
+            </div>            
+        </form>
+        
+        <div class="grey-wrapper">
+            <button type="submit" for="myform">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </div>
+        
     </div>
 </body>
 </html>

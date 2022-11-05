@@ -1,27 +1,45 @@
-body {
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    --paddingx: 1.85rem;
+}
+
+html, body {
     height: 100vh;
+    box-sizing: border-box;
     display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
-    height: 100vh;
-    width: 40vw;
+    width: 55vw;
     background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-section {
+    margin-top: 10rem;
     height: 120px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
-    position: absolute;
-    bottom: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
 }
 
 img {
@@ -33,6 +51,81 @@ img {
     color: white;
 }
 
+.odin {
+    font-size: 5rem;
+    font-family: "Norse-Bold";
+}
+
 span {
     font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container > * {
+    padding-left: var(--paddingx);
+    padding-right: 10rem;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 200px;
+    height: 1.25rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #335fdc;
+    box-shadow: 0 0 3px #335fdc
+}
+
+label {
+    font-size: 0.6rem;
+}
+
+form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.grey-wrapper {
+    background-color: #f9fafb;
+    padding-top: 2rem;
+}
+
+.top {
+    padding-top: 4rem;
+    padding-right: 25rem;
+}
+
+.form-wrapper {
+    display: flex;
+    margin: 0.75rem 0px;
+    align-items: center;
+    gap: 5rem;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+a:link {
+    color: #596D48;
+}
+
+a:visited {
+    color: #596D48;
 }
