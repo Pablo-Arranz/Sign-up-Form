@@ -6,10 +6,14 @@ let result
 
 form.addEventListener('submit', (event) =>{
     if (result === 'Not matching') {
-        pwdError.textContent = 'Passwords do not match';
+        pwdError.textContent = '*Passwords do not match';
+        pass1.classList.add('noMatch');
+        pass2.classList.add('noMatch');
         event.preventDefault();
     } else {
         pwdError.textContent = '';
+        pass1.classList.remove('noMatch');
+        pass2.classList.remove('noMatch');
         event.default;
     }
 })

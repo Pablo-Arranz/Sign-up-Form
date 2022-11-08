@@ -87,6 +87,10 @@ input:focus {
     box-shadow: 0 0 3px #335fdc
 }
 
+input:user-invalid {
+    border-color: red;
+}
+
 label {
     font-size: 0.6rem;
 }
@@ -128,4 +132,13 @@ a:link {
 
 a:visited {
     color: #596D48;
+}
+
+.error {
+    color: red;
+    font-size: 0.6rem;
+}
+
+.noMatch {
+    border-color: red;
 }
