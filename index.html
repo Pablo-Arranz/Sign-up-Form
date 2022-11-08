@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="submit.js" defer></script>
 </head>
 <body>
 
@@ -26,24 +27,24 @@
             <h3>You <span>know</span> you want to</h3>
         </div>
         
-        <form class="myform" action="#" method="get">
+        <form id="myform" action="#" method="get">
             <div class="form-wrapper">
                 <h3>Let's do this!</h3>
             </div>
             <div class="form-wrapper">
                 <div>
                     <label for="fname">FIRST NAME</label>
-                    <input type="text" name="fname" id="fname" required>
+                    <input type="text" name="fname" id="fname">
                 </div>
                 <div>
                     <label for="lname">LAST NAME</label>
-                    <input type="text" name="lname" id="lname" required>
+                    <input type="text" name="lname" id="lname">
                 </div>
             </div>
             <div class="form-wrapper">
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email">
                 </div>
                 <div>
                     <label for="phone">PHONE NUMBER</label>
@@ -52,18 +53,19 @@
             </div>
             <div class="form-wrapper">
                 <div>
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" name="password" id="pwd" required>
+                    <label for="pass1">PASSWORD</label>
+                    <input type="password" name="pas1" id="pass1" required>
+                    <span class="error"></span>
                 </div>
                 <div>
-                    <label for="confirmpwd">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmpwd" id="confirmpwd" required>
+                    <label for="pass2">CONFIRM PASSWORD</label>
+                    <input type="password" name="pass2" id="pass2" required>
                 </div>
             </div>            
         </form>
         
         <div class="grey-wrapper">
-            <button type="submit" for="myform">Create Account</button>
+            <button type="submit" form="myform">Create Account</button>
             <div>Already have an account? <a href="">Log in</a></div>
         </div>
         
